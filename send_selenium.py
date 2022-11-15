@@ -27,7 +27,7 @@ def send_selenium(config):
     )
 
     try:
-        driver.get("https://www.ford.de/hilfe/fahrzeug-ueberblick?vin=" + config["DEFAULT"]["VIN"])
+        driver.get("https://www.ford.de/hilfe/fahrzeug-ueberblick?vin=" + config["FORD"]["VIN"])
         
         sleep(5)  # wait for the requests to take place
         
